@@ -65,7 +65,6 @@ window.addEventListener("load", function () {
 
         //Splits text into hours and minutes
         function parseInput(inp){
-            console.log("Parsing " + inp);
             if(inp == null) return 0;
 
             inp = inp.replace(/\D/g,'');
@@ -93,8 +92,6 @@ window.addEventListener("load", function () {
         let goodTarget = (inputTime - (mode === "goTo" ? goodAmount : -goodAmount) - sleepDelay).mod(1440);
         let mediumTarget = (inputTime - (mode === "goTo" ? mediumAmount : -mediumAmount) - sleepDelay).mod(1440);
         let badTarget = (inputTime - (mode === "goTo" ? badAmount : -badAmount) - sleepDelay).mod(1440)
-
-        console.log(goodTarget);
 
         $("ideal-info").innerHTML = format(goodTarget);
         $("medium-info").innerHTML = format(mediumTarget);
@@ -124,13 +121,12 @@ window.addEventListener("load", function () {
     }
 
     function loadLanguage(){
-        console.log("System language: " + navigator.language);
         fetch("./lang.json").then(response =>
             response.json()).then(data =>{
                 langData = data[navigator.language] || data["en-US"]
                 Object.entries(langData).forEach(([key, value]) => {
                     let field = $(key);
-                    if(field != null){console.log(field.innerHTML = value)}
+                    if(field != null){field.innerHTML = value}
                 });
         });
     }

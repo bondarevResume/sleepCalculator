@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/moon.svg">
+    <title>Sleep Calculator</title>
+</head>
+<body>
+    <div class="container container-shadow">
+        <div class="container-wrapper">
+            <div class="header">
+                <h1 id="welcome-header">If you want to...</h1>
+            </div>
+            <div class = "time-block">
+                <div class="time-selector-wrapper elevation-low">
+                    <div class="time-selector-content">
+                        <div id="goToBed-input" class="time-selector-input">
+                            <h2 id="goToBed-text">Go to bed at...</h2>
+                            <div class="time-selector__picker">
+                                <input id="goToBed-input-field" type="text" value="23:00">
+                            </div>
+                        </div>
+                        <div class="separator"></div>
+                        <div id="wakeAt-input" class="time-selector-input">
+                            <h2 id="wakeUpAt-text">Wake up at...</h2>
+                            <div class="time-selector__picker">
+                                <input id="wake-input-field" type="text" value="08:00">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <h3 id="text-shouldWakeUp">You should wake up at...</h3>
+                <h3 id="text-shouldGoToBed">You should go to bed at...</h3>
+            </div>
+            <div class="output-block">
+                <div id="result-card-good" class="result-card result-card--good elevation-high">
+                    <div class="result-info">
+                        <h2 id="ideal-info">10:00</h2>
+                        <span id="ideal-info-extra-hours"></span>   
+                        <span id="hours-of-sleep">hours of sleep</span>
+                        <span> | </span>
+                        <span id="ideal-info-extra-cycles"></span>
+                        <span id="sleep-cycles">sleep cycles</span>
+                        <p class="secondary" id="good-info-desc">A healthy amount of sleep.</p>                    
+                    </div>
+                    <div class="svg-container">
+                        <img class="img-portrait" src="img/man.svg" alt="man">
+                    </div>
+                </div>
+                <div id="result-card-medium" class="result-card result-card--medium elevation-high">
+                    <div class="result-info">
+                        <h2 id="medium-info">08:00</h2>
+                        <span id="medium-info-extra-hours"></span>   
+                        <span id="hours-of-sleep">hours of sleep</span>
+                        <span> | </span>
+                        <span id="medium-info-extra-cycles"></span>
+                        <span id="sleep-cycles">sleep cycles</span>
+                        <p class="secondary" id="medium-info-desc">Acceptable, but not ideal.</p>
+                    </div>
+                    <div class="svg-container">
+                        <img class="img-portrait" src="img/man_tired.svg" alt="man">
+                    </div>
+                </div>
+                <div id="result-card-bad" class="result-card result-card--bad elevation-high">
+                    <div class="result-info">
+                        <h2 id="bad-info">06:00</h2>
+                        <span id="bad-info-extra-hours"></span>   
+                        <span id="hours-of-sleep">hours of sleep</span>
+                        <span> | </span>
+                        <span id="bad-info-extra-cycles"></span>
+                        <span id="sleep-cycles">sleep cycles</span>
+                        <p class="secondary" id="bad-info-desc">Barely enough to function.</p>
+                    </div>
+                    <div class="svg-container">
+                        <img class="img-portrait" src="img/man_super_tired.svg" alt="man">
+                    </div>
+                </div>
+            </div>
+            <div class="dark-theme-switch">
+                <input type="checkbox" id="dark-theme-switch"/>
+                <label for="dark-theme-switch">
+                    <div class="switch-ball switch-ball--sun"></div>
+                    <div class="switch-ball switch-ball--moon"></div>
+                </label>
+            </div>
+        </div>
+        <footer class="footer-1" id="footer-info">
+            <p></p>
+        </footer>
+    </div>
+    <div class="background-animation-area">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

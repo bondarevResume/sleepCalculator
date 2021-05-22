@@ -1,0 +1,28 @@
+{
+    "en-US": {
+        "welcome-header": "If you want to...",
+        "goToBed-text": "Go to bed at...",
+        "wakeUpAt-text": "Wake up at...",
+        "text-shouldWakeUp": "You should go to bed at...",
+        "text-shouldGo": "You should wake up at...",
+        "good-info-desc" : "A healthy amount of sleep.",
+        "medium-info-desc" : "Acceptable, but not ideal.",
+        "bad-info-desc" : "Barely enough to function.",
+        "hours-of-sleep": "hours of sleep",
+        "sleep-cycles": "sleep cycles",
+        "footer-info": "Danil Bondarev Front-end showcase project 2021"
+    },
+    "ru-RU": {
+        "welcome-header": "Если вы собираетесь...",
+        "goToBed-text": "Лечь спать в...",
+        "wakeUpAt-text": "Проснуться в...",
+        "text-shouldWakeUp": "Вам стоит проснуться в...",
+        "text-shouldGoToBed": "Вам стоит лечь спать в...",
+        "good-info-desc" : "Необходимый минимум для здорового сна.",
+        "medium-info-desc" : "Достаточно, но не идеально.",
+        "bad-info-desc" : "Едва достаточно.",
+        "hours-of-sleep": "часов сна",
+        "sleep-cycles": "циклов сна",
+        "footer-info": "Бондарев Данил Пример Работы 2021"
+    }
+  }

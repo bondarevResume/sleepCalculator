@@ -18,8 +18,11 @@ body{
 :root{
     --primary-color: #ffffff;
     --primary-color-dark: #181818;
+    --primary-text-color-dark: #ffffff;
     --disabled-color: #cccccc;
+    --input-disabled: #6e6e6e;
     --separator-color: #dfdfdf;
+    --footer-color: #808080;
 }
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button{
@@ -168,7 +171,7 @@ input[type=number] {
 }
 .footer-1{
     margin-bottom: 16px;
-    color: #808080;
+    color: var(--footer-color);
     font-size: 12px;
     text-align: center;
 }
@@ -236,10 +239,10 @@ label[for="dark-theme-switch"] .switch-ball--moon::after{
 
 html[dark] .container, html[dark] input{
     background-color: var(--primary-color-dark);
-    color: azure;
+    color: var(--primary-text-color-dark);
 }
 html[dark] .disabled, html[dark] .disabled .input{
-    color: #6e6e6e;
+    color: var(--input-disabled);
 }
 
 /* MEDIA QUERY */
